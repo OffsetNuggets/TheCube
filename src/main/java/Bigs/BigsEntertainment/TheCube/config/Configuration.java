@@ -24,7 +24,7 @@ public class Configuration extends SimpleConfig {
 	public static String WIN_MESSAGE;
 
 	private void onLoad() {
-		WIN_MESSAGE = getString("Winmsg");
+		WIN_MESSAGE = getString("Winmsg").replace('&', '§');
 	}
 
 	// End of added

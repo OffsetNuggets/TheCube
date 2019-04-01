@@ -1,0 +1,4 @@
+#Hello there!
+
+#Please enter here the message to broadcast when a player wins, you may use %player% and colors!
+Winmsg: ''

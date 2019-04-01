@@ -1,10 +1,9 @@
 package Bigs.BigsEntertainment.TheCube;
 
-import java.lang.reflect.Field;
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 import Bigs.BigsEntertainment.TheCube.config.Configuration;
+import Bigs.BigsEntertainment.TheCube.events.RightClick;
 
 public class TheCube extends JavaPlugin {
 	
@@ -13,6 +12,7 @@ public class TheCube extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 		Configuration.init();
+		getServer().getPluginManager().registerEvents(new RightClick(), this);
 	}
 	
 	public void onDisable() {
